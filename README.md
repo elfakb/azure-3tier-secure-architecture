@@ -63,7 +63,7 @@ access). No resource was given more permission than it actually needed.
 ## Screenshots
 
 **Nginx — accessed via web-vm**
-![Nginx web-vm](screenshots/Ekran Resmi 2026-09-03 10.01.49.png)
+![Nginx web-vm](screenshots/ngx)
 
 **Virtual machines overview**
 ![Virtual Machines](screenshots/Ekran Resmi 2026-09-03 09.43.10.png)
