@@ -24,8 +24,8 @@ Web subnet → App subnet → DB subnet.
 | snet-app | 10.0.2.0/24 | app-vm | Only port 8080 allowed, and only from 10.0.1.0/24 (web subnet) |
 | snet-db | 10.0.3.0/24 | db-vm | Only port 3306 allowed, and only from 10.0.2.0/24 (app subnet) |
 
-**Nginx — accessed via web-vm**
-![Diagram](screenshots/Ekran Resmi 2026-09-03 09.38.42.png)
+
+![Diagram](screenshots/diagram.png)
 
 VNet: `10.0.0.0/16`, region: `francecentral`
 
@@ -63,13 +63,13 @@ access). No resource was given more permission than it actually needed.
 ## Screenshots
 
 **Nginx — accessed via web-vm**
-![Nginx web-vm](screenshots/ngx)
+![Nginx web-vm](screenshots/nignx.png)
 
 **Virtual machines overview**
-![Virtual Machines](screenshots/Ekran Resmi 2026-09-03 09.43.10.png)
+![Virtual Machines](screenshots/vm.png)
 
 **All resources in the resource group**
-![All Resources](screenshots/Ekran Resmi 2026-09-03 09.43.20.png)
+![All Resources](screenshots/ngx.png)
 
 ## Deployment Steps (Command by Command)
 
