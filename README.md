@@ -1,6 +1,7 @@
 # Azure Secure 3-Tier Infrastructure
 
 [Türkçe](README.tr.md)
+
 A hands-on project to build a real-world company infrastructure on Azure manually 
 (Portal + Azure CLI), with the goal of understanding how Azure resources are 
 provisioned and connected before moving to Terraform.
@@ -22,6 +23,9 @@ Web subnet → App subnet → DB subnet.
 | snet-web | 10.0.1.0/24 | Load Balancer + web-vm (Nginx) | Ports 80/443 open from the internet; SSH (22) restricted to the admin's IP only |
 | snet-app | 10.0.2.0/24 | app-vm | Only port 8080 allowed, and only from 10.0.1.0/24 (web subnet) |
 | snet-db | 10.0.3.0/24 | db-vm | Only port 3306 allowed, and only from 10.0.2.0/24 (app subnet) |
+
+**Nginx — accessed via web-vm**
+![Diagram](screenshots/Ekran Resmi 2026-09-03 09.38.42.png)
 
 VNet: `10.0.0.0/16`, region: `francecentral`
 
@@ -59,16 +63,13 @@ access). No resource was given more permission than it actually needed.
 ## Screenshots
 
 **Nginx — accessed via web-vm**
-![Nginx web-vm](screenshots/01-nginx-web-vm.png)
-
-**Nginx — accessed via Load Balancer**
-![Nginx Load Balancer](screenshots/02-nginx-load-balancer.png)
+![Nginx web-vm](screenshots/Ekran Resmi 2026-09-03 10.01.49.png)
 
 **Virtual machines overview**
-![Virtual Machines](screenshots/03-virtual-machines.png)
+![Virtual Machines](screenshots/Ekran Resmi 2026-09-03 09.43.10.png)
 
 **All resources in the resource group**
-![All Resources](screenshots/04-all-resources.png)
+![All Resources](screenshots/Ekran Resmi 2026-09-03 09.43.20.png)
 
 ## Deployment Steps (Command by Command)
 
